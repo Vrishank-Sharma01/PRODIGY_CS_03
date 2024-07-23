@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+               *{
+    padding:20px;
+}
+body{
+    background:rgba(116, 161, 181, 0.385);
+}
+.box{
+    border: 2px solid yellow;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 400px;
+    margin-right: 400px;
+    background: rgba(218, 155, 173, 0.264);
+}
+#submit{
+    background: green;
+    color: #fff;
+    border-radius: 30px;
+    transition: background 0.5s;
+    padding: 8px,30px;
+    display: inline-block;
+    margin: 30px 0;
+}
+    </style>
+</head>
+<body>
+    <h1>password streangth analyser</h1>
+<div class="box">
+    <form method="POST">
+        <label fpr="password"> Enter Password:</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</div>
+    {%if feedback%}
+
+    <h2>{{feedback}}</h2>
+    {%endif%}
+
+</body>
+</html>
